@@ -1,0 +1,31 @@
+{
+  "name": "p5-digital-academy-ejercicios-javascript-simone",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/simoneavilarranz/p5-digital-academy-ejercicios-javascript-simone#readme",
+  "bugs": {
+    "url": "https://github.com/simoneavilarranz/p5-digital-academy-ejercicios-javascript-simone/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simoneavilarranz/p5-digital-academy-ejercicios-javascript-simone.git"
+  },
+  "license": "ISC",
+  "author": "simoneaa",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "sass": "sass ./src/sass/styles.scss ./src/css/styles.css",
+    "sass-w": "sass --watch ./src/sass/styles.scss ./src/css/styles.css",
+    "test": "vitest run",
+    "test-w": "vitest",
+    "test-cover": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "sass": "^1.100.0",
+    "vitest": "^4.1.7"
+  }
+}
