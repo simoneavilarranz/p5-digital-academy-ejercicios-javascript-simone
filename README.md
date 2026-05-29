@@ -33,7 +33,7 @@ Creamos la función y utilizamos export para poder realizar nuestros tests.
 
 Dentro de la función creamos una nueva variable y utilizamos el método ".toLowerCase" para devolver el valor de la cadena en minúsculas . Así obtenemos el resultado independientemente de cómo esté escrita la palabra.
 
-- .includes("english")
+- return text.includes("english")
 
 Este método determina si la variable establecida "text" incluye un determinado elemento, en este caso la palabra que buscamos ("english"), y devuelve true o false según corresponda.
 
