@@ -10,4 +10,11 @@ describe("English", () => {
         expect(result).toBe(expected);
     })
 
+    test("should return false", () => {
+        const input = "abcnEglishsef";
+        const expected = false;
+        const result = english(input);
+        expect(result).toBe(expected);
+    })
+
 })
