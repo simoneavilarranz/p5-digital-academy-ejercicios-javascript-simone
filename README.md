@@ -36,3 +36,7 @@ Dentro de la función creamos una nueva variable y utilizamos el método ".toLow
 - .includes("english")
 
 Este método determina si la variable establecida "text" incluye un determinado elemento, en este caso la palabra que buscamos ("english"), y devuelve true o false según corresponda.
+
+**Tests:**
+
+<img src="./assets/tests.jpg">
