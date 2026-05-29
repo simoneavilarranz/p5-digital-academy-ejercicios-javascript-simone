@@ -19,18 +19,20 @@ Dada una cadena de texto (string) de longitud arbitraria que contiene cualquier 
 **Algoritmo:**
 
 ```javascript
-const lookupValue = "english";
-const testString1 = "abcEnglishdef.";
-const testString2 = "abcnEglishsef.";
-
-function testString(testData, lookup){
-  return testData.toLowerCase().indexOf(lookup) === -1;
-
-function PrintResult(yesNo){
-  return "The string does" + (yesNo ? " NOT" : "") + " contain \"english\" in some form."
-}
-
-console.log(prettyPrint(testString(testString1, lookupValue)));
-console.log(prettyPrint(testString(testString2, lookupValue)));
+export function english(texto) {
+    let text = texto.toLowerCase();
+    return text.includes("english");
 }
 ```
+
+- export function english(texto)
+
+Creamos la función y utilizamos export para poder realizar nuestros tests.
+
+- let text = texto.toLowerCase
+
+Dentro de la función creamos una nueva variable y utilizamos el método ".toLowerCase" para devolver el valor de la cadena en minúsculas . Así obtenemos el resultado independientemente de cómo esté escrita la palabra.
+
+- .includes("english")
+
+Este método determina si la variable establecida "text" incluye un determinado elemento, en este caso la palabra que buscamos ("english"), y devuelve true o false según corresponda.
