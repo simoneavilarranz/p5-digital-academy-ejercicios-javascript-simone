@@ -103,3 +103,5 @@ Une las palabras con un único espacio entre ellas:
 ['mundo', 'hola'].join(' ') // "mundo hola"
 
 **Tests:**
+
+<img src="./assets/tests2.jpg">
