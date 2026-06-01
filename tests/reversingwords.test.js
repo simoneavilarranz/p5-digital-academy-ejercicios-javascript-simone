@@ -15,4 +15,10 @@ describe('reversingWords', () => {
     });
   });
 
+  describe('spacing', () => {
+    it('ignora espacios al inicio y al final', () => {
+      expect(reversingWords('  hola mundo  ')).toBe('mundo hola');
+    });
+  });
+
 });
