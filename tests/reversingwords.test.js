@@ -21,4 +21,10 @@ describe('reversingWords', () => {
     });
   });
 
+  describe('inter', () => {
+    it('normaliza multiples espacios entre palabras', () => {
+      expect(reversingWords('hola   mundo')).toBe('mundo hola');
+    });
+  });
+
 });
