@@ -68,6 +68,33 @@ export function reversingWords(str) {
 }
 ```
 
+- trim() 
 
+Elimina los espacios leading y trailing:
+"  hola mundo  ".trim() // "hola mundo"
+
+- replace(/\s+/g, ' ')
+
+Colapsa múltiples espacios consecutivos en uno solo. "\s" representa cualquier carácter de espacio en blanco, "+" significa "uno o más" del carácter anterior. Juntos, "\s+" captura cualquier secuencia de uno o más espacios en blanco consecutivos. Finalmente, "g" (Flag global), sustituye todas las coincidencias en lugar de solo la primera como haría replace normalmente:
+"hola   mundo".replace(/\s+/g, ' ') // "hola mundo"
+
+- if (!limpio) return ''
+
+Si tras la limpieza el string es "" (vacío o solo espacios), retorna "".
+
+- return limpio.split(' ') 
+
+Separa el string en un array de palabras:
+"hola mundo".split(' ') // ['hola', 'mundo']
+
+- .reverse() 
+
+Invierte el orden de las palabras, manteniendo intacta la puntuación:
+['hola', 'mundo'].reverse() // ['mundo', 'hola']
+
+- .join(' ') 
+
+Une las palabras con un único espacio entre ellas:
+['mundo', 'hola'].join(' ') // "mundo hola"
 
 **Tests:**
