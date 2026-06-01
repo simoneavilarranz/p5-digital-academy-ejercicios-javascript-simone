@@ -46,12 +46,28 @@ Este método determina si la variable establecida "text" incluye un determinado 
 
 **Objetivo:**
 
+Escribir una función que invierta el orden de las palabras en una cadena de texto (*string*) proporcionada. 
+
 **Condiciones:**
+
+1. El orden de las palabras debe invertirse (la última palabra pasa a ser la primera, etc.).
+
+2. Se deben ignorar los espacios en blanco adicionales al principio y al final de la cadena (trailing/leading spaces).
+
+3. Si hay más de un espacio entre palabras, el resultado final solo debe tener un único espacio separándolas.
+
+4. Una cadena vacía o que solo contiene espacios debe devolver una cadena vacía.
 
 **Algoritmo:**
 
 ```javascript
-
+export function reversingWords(str) {
+  const limpio = str.trim().replace(/\s+/g, ' ');
+  if (!limpio) return '';
+  return limpio.split(' ').reverse().join(' ');
+}
 ```
+
+
 
 **Tests:**
