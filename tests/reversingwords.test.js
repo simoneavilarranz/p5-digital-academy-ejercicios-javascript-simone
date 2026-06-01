@@ -27,4 +27,14 @@ describe('reversingWords', () => {
     });
   });
 
+  describe('empty', () => {
+    it('devuelve cadena vacía para un string vacío', () => {
+      expect(reversingWords('')).toBe('');
+    });
+
+    it('devuelve cadena vacía para un string con solo espacios', () => {
+      expect(reversingWords('   ')).toBe('');
+    });
+  });
+
 });
