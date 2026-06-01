@@ -1,6 +1,7 @@
 # p5-digital-academy-ejercicios-javascript-simone
 
 1. [Word exists or not](#word-exists-or-not)
+2. [Reversing words](#reversing-words)
 
 ## Word exists or not
 
@@ -40,3 +41,17 @@ Este método determina si la variable establecida "text" incluye un determinado 
 **Tests:**
 
 <img src="./assets/tests.jpg">
+
+## Reversing words
+
+**Objetivo:**
+
+**Condiciones:**
+
+**Algoritmo:**
+
+```javascript
+
+```
+
+**Tests:**
