@@ -9,4 +9,10 @@ describe('reversingWords', () => {
     });
   });
 
+  describe('punto', () => {
+    it('mantiene el punto unido a su palabra', () => {
+      expect(reversingWords('hola mundo.')).toBe('mundo. hola');
+    });
+  });
+
 });
