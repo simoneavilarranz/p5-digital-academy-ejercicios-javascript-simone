@@ -197,3 +197,5 @@ Se define una función llamada countAnimals, recibe un parámetro "list".
 Los diferentes escenarios dependiendo del número de ovejas y lobos, "return" al final devuelve el último escenario restante en caso de que no se cumplan ninguna de las condiciones anteriores.
 
 **Tests**
+
+<img src="./assets/tests3.jpg">
