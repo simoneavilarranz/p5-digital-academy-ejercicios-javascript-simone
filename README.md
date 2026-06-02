@@ -151,7 +151,49 @@ Escribir una function que nos diga cuantas ovejas hay en total o si los lobos se
 **Algoritmo**
 
 ```javascript
+function countAnimals(list) {
 
+  if (!Array.isArray(list) || !list.every(item => typeof item === 'boolean')) {
+    throw new Error('Invalid input: list must contain only boolean values')
+  }
+
+  const sheep  = list.filter(Boolean).length
+  const wolves = list.filter(v => !v).length
+
+  if (wolves === 0)        return `There are ${sheep} sheep in total`
+  if (sheep === 0)         return 'UPS!!! A pack of hungry wolves'
+  if (sheep > wolves)      return `${sheep} sheep escaped!!!`
+  return 'UPS!!! Wolves ate all the sheep'
+
+}
 ```
+
+- function countAnimals(list) {}
+
+Se define una función llamada countAnimals, recibe un parámetro "list".
+
+- if (!Array.isArray(list) || !list.every(item => typeof item === 'boolean')) {
+  throw new Error('Invalid input: list must contain only boolean values')
+}
+
+"!Array.isArray(list)" verifica si list no es un array, "||" si la primera o la segunda condición es verdadera, se ejecuta el throw, ".every()" comprueba si todos los elementos cumplen una condición, "item => typeof item === 'boolean'" es una arrow function que verifica si cada elemento es boleano. 
+
+- const sheep = list.filter(Boolean).length
+
+".filter(Boolean)" filtra los boleanos en la lista, ".length" obtiene la cantidad de elementos que quedaron tras el filtrado.
+
+- const wolves = list.filter(v => !v).length
+
+".filter(v => !v)" es una arrow function que devuelve true cuando v es false, ".length" obtiene la cantidad de elementos que quedaron tras el filtrado.
+
+- if (wolves === 0) return `There are ${sheep} sheep in total`
+
+- if (sheep === 0) return 'UPS!!! A pack of hungry wolves'
+
+- if (sheep > wolves) return `${sheep} sheep escaped!!!`
+
+- return 'UPS!!! Wolves ate all the sheep'
+
+Los diferentes escenarios dependiendo del número de ovejas y lobos, "return" al final devuelve el último escenario restante en caso de que no se cumplan ninguna de las condiciones anteriores.
 
 **Tests**
