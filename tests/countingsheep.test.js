@@ -19,4 +19,8 @@ describe('countAnimals', () => {
     expect(countAnimals([true, false, false, false])).toBe('UPS!!! Wolves ate all the sheep')
     })
 
+    it('not-an-array', () => {
+    expect(() => countAnimals('not an array')).toThrow('Invalid input: list must contain only boolean values')
+    })
+
 })
