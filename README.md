@@ -2,6 +2,7 @@
 
 1. [Word exists or not](#word-exists-or-not)
 2. [Reversing words](#reversing-words)
+3. [Counting sheep](#counting-sheep)
 
 ## Word exists or not
 
@@ -105,3 +106,52 @@ Une las palabras con un único espacio entre ellas:
 **Tests:**
 
 <img src="./assets/tests2.jpg">
+
+## Counting sheep
+
+**Objetivo**
+
+Escribir una function que nos diga cuantas ovejas hay en total o si los lobos se han comido las ovejas
+
+**Condiciones**
+
+1. Scenario: Solo hay ovejas
+
+    Given que proporciono una lista válida que contiene únicamente valores true
+    When ejecuto la función countAnimals
+    Then el resultado debe ser "There are <quantity> sheep in total"
+
+2. Scenario: Solo hay lobos
+    Given que proporciono una lista válida que contiene únicamente valores false
+    When ejecuto la función countAnimals
+    Then el resultado debe ser "UPS!!! A pack of hungry wolves"
+
+3. Scenario: Hay más ovejas que lobos
+    Given que proporciono una lista válida de valores booleanos
+    And la cantidad de true es mayor que la cantidad de false
+    When ejecuto la función countAnimals
+    Then el resultado debe ser "<quantity> sheep escaped!!!"
+
+4. Scenario: Hay más lobos que ovejas
+    Given que proporciono una lista válida de valores booleanos
+    And la cantidad de false es mayor que la cantidad de true
+    When ejecuto la función countAnimals
+    Then el resultado debe ser "UPS!!! Wolves ate all the sheep"
+
+5. Scenario: El input no es un array
+    Given que proporciono un valor que no es un array
+    When ejecuto la función countAnimals
+    Then debe lanzarse un error con el mensaje "Invalid input: list must contain only boolean values"
+
+6. Scenario: El array contiene elementos que no son booleanos
+    Given que proporciono un array con valores no booleanos
+    When ejecuto la función countAnimals
+    Then debe lanzarse un error con el mensaje "Invalid input: list must contain only boolean values"
+
+**Algoritmo**
+
+```javascript
+
+```
+
+**Tests**
