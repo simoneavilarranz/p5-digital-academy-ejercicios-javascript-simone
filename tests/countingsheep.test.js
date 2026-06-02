@@ -3,8 +3,12 @@ import { countAnimals } from '/js/countingsheep'
 
 describe('countAnimals', () => {
 
-  it('sheep', () => {
+    it('sheep', () => {
     expect(countAnimals([true, true, true])).toBe('There are 3 sheep in total')
-  })
+    })
+
+    it('wolves', () => {
+    expect(countAnimals([false, false, false])).toBe('UPS!!! A pack of hungry wolves')
+    })
 
 })
