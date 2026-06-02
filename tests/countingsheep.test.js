@@ -11,4 +11,8 @@ describe('countAnimals', () => {
     expect(countAnimals([false, false, false])).toBe('UPS!!! A pack of hungry wolves')
     })
 
+    it('escaped', () => {
+    expect(countAnimals([true, true, true, false, false])).toBe('3 sheep escaped!!!')
+    })
+
 })
